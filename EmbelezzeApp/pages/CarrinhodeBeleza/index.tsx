@@ -10,7 +10,10 @@ export default function Carrinho() {
 <Image style={estilos.logo} source={logo}></Image>
 <Text style={estilos.titulo}>Detalhes do Carrinho</Text>
 <View>
-    <Text>Produtos de Beleza</Text>
+    <Text style={estilos.nome}>Produtos de Beleza</Text>
+
+
+
 </View>
 
 </>
@@ -20,7 +23,7 @@ export default function Carrinho() {
 const estilos = StyleSheet.create({
     logo: {
         width: "100%",
-        height: (578 / 768) * width
+        height: (500 / 500) * width
     },
     titulo: {
         width: "100%",
@@ -29,7 +32,11 @@ const estilos = StyleSheet.create({
         textAlign: "center",
         fontSize: 24,
         lineHeight: 26,
-        padding: 16,
-        fontFamily: "MontserratBold"
+        padding: 16
+      },
+      nome: {
+        fontSize: 26,
+        lineHeight: 42,
+        color: "#464646",
       }
 })
